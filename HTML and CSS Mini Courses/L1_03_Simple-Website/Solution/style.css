@@ -1,0 +1,30 @@
+nav {
+    background-color: #234467;
+    padding: 4px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+    text-decoration: none;  
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul {
+    text-align: center;
+}
+
+main section {
+    text-align: center;
+}
+
+footer {
+    background-color: #234467;
+    padding: 4px;
+    color: white;
+    text-align: center;
+}
