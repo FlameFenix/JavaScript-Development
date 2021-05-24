@@ -1,0 +1,8 @@
+table, tbody, td{
+    border:  1px solid black;
+    text-align: end;
+}
+
+thead.firstRow tr td {
+    text-align: center;
+}
