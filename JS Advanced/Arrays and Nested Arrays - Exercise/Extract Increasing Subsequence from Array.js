@@ -1,8 +1,13 @@
 function subsequence(input) {
+    input = input.map(Number);
     let newArr = [];
-    newArr.push(input[0]);
+
+    if (input.length > 0) {
+        newArr.push(input[0]);
+    }
+
     for (let i = 0; i < input.length; i++) {
-        if (newArr[newArr.length - 1] < input[i]) {
+        if (input[i] >= newArr[newArr.length - 1]) {
             newArr.push(input[i]);
         }
     }
@@ -11,13 +16,10 @@ function subsequence(input) {
 
 }
 
-console.log(subsequence([1,
-    3,
-    8,
-    4,
-    10,
-    12,
-    3,
-    2,
-    24]
+console.log(subsequence([20, 
+    3, 
+    2, 
+    15,
+    6, 
+    1]
 ));

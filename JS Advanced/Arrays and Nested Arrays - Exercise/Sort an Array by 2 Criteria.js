@@ -1,23 +1,28 @@
 function twoCriterias(input) {
-    input.sort((a, b) => a.length - b.length);
     input.sort((a, b) => {
-        let charA = a.toUpperCase()
-        let charB = b.toUpperCase()
-        if (charA < charB) {
-            return -1;
-        }
-        if (charA > charB) {
-            return 1;
-        }
-        return 0;
-    });
+        let stringA = a.toUpperCase();
+        let stringB = b.toUpperCase();
 
-    return input;
+        if (a.length > b.length) {
+            return 1;
+        } else if (a.length < b.length) {
+            return -1;
+        } else {
+            if(stringA > stringB) {
+                return 1;
+            } else if(stringA < stringB) {
+                return -1;
+            } else {
+                return 0;
+            }
+        }
+    })
+    return input.join('\n');
 }
 
-console.log(twoCriterias(['test',
-    'Deny',
-    'omen',
-    'Default']
-
+console.log(twoCriterias(['Isacc', 
+'Theodor', 
+'Jack', 
+'Harrison', 
+'George']
 ));
