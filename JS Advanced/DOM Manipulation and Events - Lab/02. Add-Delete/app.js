@@ -12,10 +12,10 @@ function addItem() {
     newItem.appendChild(deleteBtn);
     listOfItemsElement.appendChild(newItem);
 
-    deleteBtn.addEventListener('click', (e) => {
+    deleteBtn.addEventListener('click', () => {
         listOfItemsElement.removeChild(deleteBtn.parentElement);
     });
-    
+
     newItemInputElement.value = '';
     //TODO...
 }
