@@ -19,7 +19,7 @@ function solve() {
    let checkoutElement = document.querySelector('.checkout');
    checkoutElement.addEventListener('click', () => {
 
-      textAreaElement.textContent += `You bought ${arr.join(', ')} for ${sum}.`;
+      textAreaElement.textContent += `You bought ${arr.join(', ')} for ${sum.toFixed(2)}.`;
 
       checkoutElement.setAttribute('disabled', true);
 
