@@ -17,7 +17,5 @@ function create(words) {
 
    function showParagraph(e) {
       e.target.children[0].style.display = '';
-      console.log(e.target.children[0]);
-      console.log(e);
    }
 }
