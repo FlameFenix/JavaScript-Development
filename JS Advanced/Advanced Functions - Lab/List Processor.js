@@ -7,12 +7,7 @@ function closure(input) {
                 arr.push(str);
             },
             remove: (str) => {
-                for (let i = 0; i < arr.length; i++) {
-                    const element = arr[i];
-                    if (element == str) {
-                        arr.splice(i, 1);
-                    } 
-                }
+                arr = arr.filter(x => x !== str);
             },
             print: () => {
                 console.log(arr.join(','));
@@ -21,7 +16,7 @@ function closure(input) {
     }
 
     let obj = processList();
-    
+
     for (const element of input) {
         let cmdArgs = element.split(' ');
         obj[cmdArgs[0]](cmdArgs[1]);
