@@ -1,8 +1,5 @@
 function getPersons() {
 
-    let arr = [];
-    
-
     class Person {
         constructor(firstName, lastName, age, email) {
             this.firstName = firstName;
@@ -17,13 +14,12 @@ function getPersons() {
     }
     
     let personOne = new Person('Anna', 'Simpson', 22, 'anna@yahoo.com');
-    arr.push(personOne);
     let personTwo = new Person('SoftUni');
-    arr.push(personTwo);
     let personThree = new Person('Stephan', 'Johnson', 25);
-    arr.push(personThree);
     let personFour = new Person('Gabriel', 'Peterson', 24, 'g.p@gmail.com');
-    arr.push(personFour);
+
+    let arr = [personOne,personTwo,personThree,personFour];
+
     return arr;
 }
 
